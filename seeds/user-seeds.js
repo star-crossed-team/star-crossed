@@ -10,6 +10,33 @@ const userData = [
     light_energy: -2000000000,
     fav_quote: "Quotes around the keys.",
   },
+  {
+    user_name: "Bella",
+    celestial_type: "Nebula",
+    temperature: 40000,
+    gravity_pull: 2000000,
+    primary_elements: "Star Babies",
+    light_energy: 40000000,
+    fav_quote: "We're all made of starstuff.",
+  },
+  {
+    user_name: "E-4397",
+    celestial_type: "Satellite",
+    temperature: -65,
+    gravity_pull: 0,
+    primary_elements: "Metal",
+    light_energy: 0,
+    fav_quote: "Just a lil piece of space trash.",
+  },
+  {
+    user_name: "Andy",
+    celestial_type: "Andromeda Galaxy",
+    temperature: 30000,
+    gravity_pull: 900000000000,
+    primary_elements: "Planets and Stars",
+    light_energy: 490023234224,
+    fav_quote: "What's an aliens pet called? An Extra-Furestrial.",
+  },
 ];
 
 const seedUsers = () => User.bulkCreate(userData);

@@ -29,7 +29,7 @@ User.init(
       allowNull: false,
     },
     gravity_pull: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(50,0),
       allowNull: false,
     },
     primary_elements: {
@@ -37,7 +37,7 @@ User.init(
       allowNull: false,
     },
     light_energy: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(50,0),
       allowNull: false,
     },
     fav_quote: {
