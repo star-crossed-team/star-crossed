@@ -1,4 +1,45 @@
+:root {
+	--dark-blue: #00569e;
+	--lavender: #b09bd8;
+	--light-blue: #52e7fa;
+	--white: #f6fdfe;
+	--green: #7dccab;
+    --title-font: font-family: 'Zen Dots', cursive;
+    --body-font: font-family: 'ZCOOL XiaoWei', serif;
+}
+
 .bg-cover {
 	background: url(../images/space.jpg);
 	background-size: cover;
 }
+
+.nav-style {
+    font-family: var(--title-font);
+    color: var(--green);
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--lavender);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--light-blue);
+}
+
+/* .title-font {
+	font-family: 'Zen Dots', cursive;
+}
+
+.body-font {
+	font-family: 'ZCOOL XiaoWei', serif;
+} */
+
+/*
+--dark-blue: #00569E;
+--lavender: #B09BD8;
+--light-blue: #52E7FA;
+--white: #F6FDFE;
+--green: #7DCCAB;
+ */
