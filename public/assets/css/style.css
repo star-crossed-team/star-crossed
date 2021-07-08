@@ -1,0 +1,4 @@
+.bg-cover {
+	background: url(../images/space.jpg);
+	background-size: cover;
+}
