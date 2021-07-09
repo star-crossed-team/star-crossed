@@ -8,7 +8,16 @@
     --body-font: font-family: 'ZCOOL XiaoWei', serif;
 }
 
-.bg-cover {
+
+.zen-dots {
+    font-family: 'Zen Dots', cursive;
+}
+
+.zcool {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+body {
 	background: url(../images/space.jpg);
 	background-size: cover;
 }
@@ -31,6 +40,12 @@ h5 {
 p {
     font-family: var(--body-font);
     color: var(--light-blue);
+}
+
+.card-center {
+    display: flex;
+    margin: auto;
+    margin-top: 10em;
 }
 
 /* .title-font {
