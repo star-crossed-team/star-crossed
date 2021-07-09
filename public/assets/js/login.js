@@ -24,22 +24,22 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-
-  const name = document.querySelector("#name-signup").value.trim();
+  console.log('helllo');
+  const user_name = document.querySelector("#name-signup").value.trim();
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
-  const celestialType = document.querySelector("#celestialtype-signup").value.trim();
+  const celestial_type = document.querySelector("#celestialtype-signup").value.trim();
   const temperature = document.querySelector("#temp-signup").value.trim();
-  const gravity = document.querySelector("#gravity-signup").value.trim();
-  const elements = document.querySelector("#elements-signup").value.trim();
-  const light = document.querySelector("#light-signup").value.trim();
-  const quote = document.querySelector("#quote-signup").value.trim();
-  const photo = document.querySelector("#photo-signup").value.trim();
+  const gravity_pull = document.querySelector("#gravity-signup").value.trim();
+  const primary_elements = document.querySelector("#elements-signup").value.trim();
+  const light_energy = document.querySelector("#light-signup").value.trim();
+  const fav_quote = document.querySelector("#quote-signup").value.trim();
 
-  if (name && email && password && celestialType && temperature && gravity && elements && light && quote && photo) {
-    const response = await fetch("/users", {
+  if (user_name && email && password && celestial_type && temperature && gravity_pull && primary_elements && light_energy && fav_quote) {
+    console.log('omg');
+    const response = await fetch("/api/users", {
       method: "POST",
-      body: JSON.stringify({ name, email, password, celestialType, temperature, gravity, elements, light, quote, photo }),
+      body: JSON.stringify({ user_name, email, password, celestial_type, temperature, gravity_pull, primary_elements, light_energy, fav_quote }),
       headers: { "Content-Type": "application/json" },
     });
 
@@ -51,9 +51,9 @@ const signupFormHandler = async (event) => {
   }
 };
 
-document
-  .querySelector(".login-form")
-  .addEventListener("submit", loginFormHandler);
+// document
+//   .querySelector(".login-form")
+//   .addEventListener("submit", loginFormHandler);
 
 document
   .querySelector(".signup-form")
