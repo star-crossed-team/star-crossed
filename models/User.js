@@ -1,10 +1,14 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require("sequelize");
-// import our database connection from config.js
+const bcrypt = require("bcrypt");
 const sequelize = require("./../config/connection.js");
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class User extends Model {}
+class User extends Model {
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
+}
 
 // set up fields and rules for User model
 User.init(
@@ -29,7 +33,7 @@ User.init(
       allowNull: false,
     },
     gravity_pull: {
-      type: DataTypes.DECIMAL(50,0),
+      type: DataTypes.DECIMAL(50, 0),
       allowNull: false,
     },
     primary_elements: {
@@ -37,15 +41,40 @@ User.init(
       allowNull: false,
     },
     light_energy: {
-      type: DataTypes.DECIMAL(50,0),
+      type: DataTypes.DECIMAL(50, 0),
       allowNull: false,
     },
     fav_quote: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8],
+      },
+    },
   },
   {
+    hooks: {
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
+      },
+      beforeUpdate: async (updatedUserData) => {
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        return updatedUserData;
+      },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

@@ -9,6 +9,8 @@ const userData = [
     primary_elements: "All that is holy",
     light_energy: -2000000000,
     fav_quote: "Quotes around the keys.",
+    email: "blackholecarl@aol.com",
+    password: "12345678",
   },
   {
     user_name: "Bella",
@@ -18,6 +20,8 @@ const userData = [
     primary_elements: "Star Babies",
     light_energy: 40000000,
     fav_quote: "We're all made of starstuff.",
+    email: "nebubella@aol.com",
+    password: "12345678",
   },
   {
     user_name: "E-4397",
@@ -27,6 +31,8 @@ const userData = [
     primary_elements: "Metal",
     light_energy: 0,
     fav_quote: "Just a lil piece of space trash.",
+    email: "spacetrash@aol.com",
+    password: "12345678",
   },
   {
     user_name: "Andy",
@@ -35,7 +41,9 @@ const userData = [
     gravity_pull: 900000000000,
     primary_elements: "Planets and Stars",
     light_energy: 490023234224,
-    fav_quote: "What's an aliens pet called? An Extra-Furestrial.",
+    fav_quote: "What's an alien's pet called? An Extra-Furestrial.",
+    email: "andygal@aol.com",
+    password: "12345678",
   },
 ];
 
