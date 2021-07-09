@@ -32,11 +32,11 @@ router.get("/login", (req, res) => {
 
 router.get("/signup", (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    alert("You must log out before creating a new profile")
-    res.redirect("/homepage");
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   alert("You must log out before creating a new profile");
+  //   res.redirect("/homepage");
+  //   return;
+  // }
   res.render("signup");
 });
 

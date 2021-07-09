@@ -47,6 +47,19 @@ p {
     color: var(--light-blue);
 }
 
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align:right;
+    padding-right: 1em;
+}
+/* input {
+  display: inline-block;
+  float: left;
+} */
+
 .signup-label {
     color: var(--white);
 }
@@ -55,6 +68,28 @@ p {
     display: flex;
     margin: auto;
     margin-top: 10em;
+}
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.p-1em {
+    padding: 1em;
+}
+
+.mt-2em {
+    margin-top: 2em;
 }
 
 /* .title-font {
