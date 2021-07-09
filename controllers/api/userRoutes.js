@@ -1,8 +1,17 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const User = require("./../../models/User");
+
+router.get("/", (req, res) => {
+  // Get all books from the book table
+  User.findAll().then((userData) => {
+    res.json(userData);
+  });
+});
 
 router.post("/", async (req, res) => {
+  console.log("1");
   try {
+    console.log("2");
     const userData = await User.create(req.body);
 
     req.session.save(() => {
@@ -15,6 +24,7 @@ router.post("/", async (req, res) => {
     res.status(400).json(err);
   }
 });
+
 
 router.post("/login", async (req, res) => {
   try {

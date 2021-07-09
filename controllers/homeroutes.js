@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const withAuth = require("../utils/auth");
+const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
@@ -37,7 +37,6 @@ router.get("/signup", (req, res) => {
     res.redirect("/homepage");
     return;
   }
-
   res.render("signup");
 });
 

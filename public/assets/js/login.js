@@ -28,11 +28,18 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector("#name-signup").value.trim();
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
+  const celestialType = document.querySelector("#celestialtype-signup").value.trim();
+  const temperature = document.querySelector("#temp-signup").value.trim();
+  const gravity = document.querySelector("#gravity-signup").value.trim();
+  const elements = document.querySelector("#elements-signup").value.trim();
+  const light = document.querySelector("#light-signup").value.trim();
+  const quote = document.querySelector("#quote-signup").value.trim();
+  const photo = document.querySelector("#photo-signup").value.trim();
 
-  if (name && email && password) {
-    const response = await fetch("/api/users", {
+  if (name && email && password && celestialType && temperature && gravity && elements && light && quote && photo) {
+    const response = await fetch("/users", {
       method: "POST",
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ name, email, password, celestialType, temperature, gravity, elements, light, quote, photo }),
       headers: { "Content-Type": "application/json" },
     });
 

@@ -41,7 +41,7 @@ const userData = [
     gravity_pull: 900000000000,
     primary_elements: "Planets and Stars",
     light_energy: 490023234224,
-    fav_quote: "What's an aliens pet called? An Extra-Furestrial.",
+    fav_quote: "What's an alien's pet called? An Extra-Furestrial.",
     email: "andygal@aol.com",
     password: "12345678",
   },
