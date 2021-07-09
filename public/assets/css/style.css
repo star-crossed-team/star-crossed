@@ -39,7 +39,7 @@ h2 {
 	color: var(--white);
 }
 
-h5 {
+h3 {
 	font-family: var(--title-font);
 	color: var(--dark-blue);
 }
@@ -49,6 +49,13 @@ p {
 	color: var(--light-blue);
 }
 
+.logo-main {
+	display: flex;
+	margin: auto;
+	width: 250;
+	height: 250;
+}
+
 .signup-label {
 	color: var(--white);
 }
@@ -56,12 +63,11 @@ p {
 .card-center {
 	display: flex;
 	margin: auto;
-	margin-top: 10em;
-	margin-bottom: 10em;
 	padding: 0;
 }
 
 .card-glow {
+	z-index: -1;
 	-webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	-webkit-animation-name: gradient-shadow;
@@ -72,11 +78,11 @@ p {
 	animation-duration: 3s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-	border-radius: 10px 100px / 100px;
-	-webkit-border-radius: 10px 100px / 100px;
-	-moz-border-radius: 10px 100px / 100px;
-	-ms-border-radius: 10px 100px / 100px;
-	-o-border-radius: 10px 100px / 100px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 @-webkit-keyframes gradient-shadow {
@@ -133,18 +139,42 @@ p {
 	}
 }
 
-/* .title-font {
-	font-family: 'Zen Dots', cursive;
+.bg-lavender {
+	background-color: var(--lavender);
 }
 
-.body-font {
-	font-family: 'ZCOOL XiaoWei', serif;
-} */
+.bg-light-blue {
+	background-color: var(--light-blue);
+}
 
-/*
---dark-blue: #00569E;
---lavender: #B09BD8;
---light-blue: #52E7FA;
---white: #F6FDFE;
---green: #7DCCAB;
- */
+.bg-dark-blue {
+	background-color: var(--dark-blue);
+}
+
+.bg-green {
+	background-color: var(--green);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.color-lavender {
+	color: var(--lavender);
+}
+
+.color-light-blue {
+	color: var(--light-blue);
+}
+
+.color-dark-blue {
+	color: var(--dark-blue);
+}
+
+.text-green {
+	color: var(--green);
+}
+
+.text-white {
+	color: var(--white);
+}
