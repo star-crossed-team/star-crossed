@@ -23,6 +23,11 @@ h1 {
     color: var(--lavender);
 }
 
+h5 {
+    font-family: var(--title-font);
+    color: var(--dark-blue);
+}
+
 p {
     font-family: var(--body-font);
     color: var(--light-blue);
