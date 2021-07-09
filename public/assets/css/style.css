@@ -4,17 +4,11 @@
 	--light-blue: #52e7fa;
 	--white: #f6fdfe;
 	--green: #7dccab;
-    --title-font: font-family: 'Zen Dots', cursive;
-    --body-font: font-family: 'ZCOOL XiaoWei', serif;
 }
 
-
-.zen-dots {
-    font-family: 'Zen Dots', cursive;
-}
-
-.zcool {
-    font-family: 'ZCOOL XiaoWei', serif;
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -22,29 +16,44 @@ body {
 	background-size: cover;
 }
 
+.zen-dots {
+	font-family: 'Zen Dots', cursive;
+}
+
+.zcool {
+	font-family: 'ZCOOL XiaoWei', serif;
+}
+
 .nav-style {
-    font-family: var(--title-font);
-    color: var(--green);
+	font-family: var(--title-font);
+	color: var(--green);
 }
 
 h1 {
-    font-family: var(--title-font);
-    color: var(--lavender);
+	font-family: var(--title-font);
+	color: var(--lavender);
 }
 
 h2 {
-    font-family: var(--title-font);
-    color: var(--white);
+	font-family: var(--title-font);
+	color: var(--white);
 }
 
-h5 {
-    font-family: var(--title-font);
-    color: var(--dark-blue);
+h3 {
+	font-family: var(--title-font);
+	color: var(--dark-blue);
 }
 
 p {
-    font-family: var(--body-font);
-    color: var(--light-blue);
+	font-family: var(--body-font);
+	color: var(--light-blue);
+}
+
+.logo-main {
+	display: flex;
+	margin: auto;
+	width: 250;
+	height: 250;
 }
 
 label{
@@ -61,49 +70,106 @@ label{
 } */
 
 .signup-label {
-    color: var(--white);
+	color: var(--white);
 }
 
 .card-center {
-    display: flex;
-    margin: auto;
-    margin-top: 10em;
+	display: flex;
+	margin: auto;
+	padding: 0;
 }
 
-.form-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+@-webkit-keyframes gradient-shadow {
+	0% {
+		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+	}
+	20% {
+		-webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+		box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+	}
+	40% {
+		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+	}
+	60% {
+		-webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+		box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+	}
+	80% {
+		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+	}
 }
 
-.d-f {
-    display: flex;
+@keyframes gradient-shadow {
+	0% {
+		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+	}
+	20% {
+		-webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+		box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+	}
+	40% {
+		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+	}
+	60% {
+		-webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+		box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+	}
+	80% {
+		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+	}
 }
 
-.jc-c {
-    justify-content: center;
+.bg-lavender {
+	background-color: var(--lavender);
 }
 
-.p-1em {
-    padding: 1em;
+.bg-light-blue {
+	background-color: var(--light-blue);
 }
 
-.mt-2em {
-    margin-top: 2em;
+.bg-dark-blue {
+	background-color: var(--dark-blue);
 }
 
-/* .title-font {
-	font-family: 'Zen Dots', cursive;
+.bg-green {
+	background-color: var(--green);
 }
 
-.body-font {
-	font-family: 'ZCOOL XiaoWei', serif;
-} */
+.bg-white {
+	background-color: var(--white);
+}
 
-/*
---dark-blue: #00569E;
---lavender: #B09BD8;
---light-blue: #52E7FA;
---white: #F6FDFE;
---green: #7DCCAB;
- */
+.color-lavender {
+	color: var(--lavender);
+}
+
+.color-light-blue {
+	color: var(--light-blue);
+}
+
+.color-dark-blue {
+	color: var(--dark-blue);
+}
+
+.text-green {
+	color: var(--green);
+}
+
+.text-white {
+	color: var(--white);
+}
