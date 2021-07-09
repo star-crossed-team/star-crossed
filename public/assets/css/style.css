@@ -23,6 +23,11 @@ h1 {
     color: var(--lavender);
 }
 
+h2 {
+    font-family: var(--title-font);
+    color: var(--white);
+}
+
 h5 {
     font-family: var(--title-font);
     color: var(--dark-blue);
@@ -31,6 +36,10 @@ h5 {
 p {
     font-family: var(--body-font);
     color: var(--light-blue);
+}
+
+.signup-label {
+    color: var(--white);
 }
 
 /* .title-font {
