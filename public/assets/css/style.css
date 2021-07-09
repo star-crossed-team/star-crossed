@@ -173,3 +173,48 @@ label{
 .text-white {
 	color: var(--white);
 }
+
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.p-1em {
+    padding: 1em;
+}
+
+.mt-2em {
+    margin-top: 2em;
+}
+
+	 .title-font {
+	font-family: 'Zen Dots', cursive;
+	 }
+.card-glow {
+	z-index: -1;
+	-webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
+	box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
+	-webkit-animation-name: gradient-shadow;
+	animation-name: gradient-shadow;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
