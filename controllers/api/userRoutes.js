@@ -2,7 +2,6 @@ const router = require("express").Router();
 const User = require("./../../models/User");
 
 router.get("/", (req, res) => {
-  // Get all books from the book table
   User.findAll().then((userData) => {
     res.json(userData);
   });
