@@ -80,7 +80,7 @@ p {
 
 label{
     display: inline-block;
-    float: left;
+     float: left;
     clear: left;
     width: 250px;
     text-align:right;
@@ -267,7 +267,7 @@ label{
 	font-family: 'Zen Dots', cursive;
 	 }
 .card-glow {
-	
+
 	-webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	-webkit-animation-name: gradient-shadow;
