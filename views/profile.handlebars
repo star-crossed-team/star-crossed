@@ -1,31 +1,103 @@
-<nav class="nav justify-content-start">
-    Star-Crossed!
+{{! Nav Bar Logo - Left }}
+<nav class="navbar navbar-expand-md">
+  <div class="nav-bar">
+    <img src="/assets/images/logo_light.png" style="max-width: 3em;" />
+  </div>
+  {{! Nav Bar Buttons - Right }}
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
 
-<ul class="nav justify-content-end">
+      <li class="nav-item zcool">
+        <a class="nav-link" href="#">My Profile</a>
+      </li>
+      <li class="nav-item zcool">
+        <a class="nav-link" href="#">Matches</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item zcool">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Matches</a>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">My Profile</a>
-  </li>
-
-</ul>
+    </ul>
+  </div>
 </nav>
-</banner>
 
-<div class="col-4">
+{{! Profile Cards }}
+
+{{! Profile 1 }}
+<div class="row">
+  <div class="col-sm-3">
     <div class="card" style="width: 18rem;">
-        <img src="/assets/images/carl.gif" class="card-img-top" alt="blackhole">
-        <div class="card-body">
-            <h5 class="card-title">Carl</h5>
-            <p class="card-text">Black hole.</p>
-     </div>
-</div>
-</div>
-<div class="col-8">
-    This is where other profiles will go
-</div>
+      <img class="card-img-top" src="/assets/images/carl.gif" alt="Card image cap"/>
+        <div class="card-body profile-card">
+          <h5 class="card-title">Bella</h5>
+            <p class="card-text">230 lightyears away!</p>
+            <p class="card-text">Celestial Type: Nebula</p>
+            <p class="card-text">Temperature: 40000</p>
+            <p class="card-text">Gravitational Pull: 200000</p>
+            <p class="card-text">Primary Elements: Stars</p>
+            <p class="card-text">Light Energy: 400000</p>
+            <p class="card-text">Favorite Quote: "We're all made of starstuff"</p>
+         </div>
+    </div>
+  </div>
+  
+  {{! Profile 2 }}
+  <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/assets/images/bella.gif" alt="Card image cap"/>
+       <div class="card-body profile-card">
+          <h5 class="card-title">Bella</h5>
+            <p class="card-text">230 lightyears away!</p>
+            <p class="card-text">Celestial Type: Nebula</p>
+            <p class="card-text">Temperature: 40000</p>
+            <p class="card-text">Gravitational Pull: 200000</p>
+            <p class="card-text">Primary Elements: Stars</p>
+            <p class="card-text">Light Energy: 400000</p>
+            <p class="card-text">Favorite Quote: "We're all made of starstuff"</p>
+      </div>
+  </div>
+  </div>
+  {{! Profile 3 }}
+  <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/assets/images/satellite.gif" alt="Card image cap"/>
+        <div class="card-body profile-card">
+          <h5 class="card-title">E-4397</h5>
+            <p class="card-text near">In your orbit!</p>
+            <p class="card-text">Celestial Type: Satellite</p>
+            <p class="card-text">Temperature: -65</p>
+            <p class="card-text">Gravitational Pull: 0</p>
+            <p class="card-text">Primary Elements: Recycled rollercoasters-- metal</p>
+            <p class="card-text">Light Energy: 0</p>
+            <p class="card-text">Favorite Quote: "Just a lil piece of space trash"</p>
+        </div>
+    </div>
+  </div>
+
+  {{!-- Profile 4 --}}
+      <div class="col-sm-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/images/satellite.gif" alt="Card image cap"/>
+          <div class="card-body profile-card">
+            <h5 class="card-title">Andy</h5>
+              <p class="card-text">2304910</p>
+              <p class="card-text">Celestial Type: Satellite</p>
+              <p class="card-text">Temperature: -65</p>
+              <p class="card-text">Gravitational Pull: 0</p>
+              <p class="card-text">Primary Elements: Recycled rollercoasters-- metal</p>
+              <p class="card-text">Light Energy: 0</p>
+              <p class="card-text">Favorite Quote: "Just a lil piece of space trash"</p>
+          </div>
+      </div>
+    </div>
+  </div>
