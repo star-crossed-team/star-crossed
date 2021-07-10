@@ -196,7 +196,7 @@ label{
 .card {
 	background-color: transparent;
 	border: 0;
-	
+
 }
 .color-lavender {
 	color: var(--lavender);
@@ -260,7 +260,7 @@ label{
 	font-family: 'Zen Dots', cursive;
 	 }
 .card-glow {
-	z-index: -1;
+	
 	-webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
 	-webkit-animation-name: gradient-shadow;
