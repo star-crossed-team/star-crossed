@@ -1,6 +1,7 @@
 :root {
 	--dark-blue: #00569e;
-	--lavender: #b09bd8;
+	--neon-kelp:#93f0e0;
+	--lavender: #62439c;
 	--light-blue: #52e7fa;
 	--white: #f6fdfe;
 	--green: #7dccab;
@@ -16,6 +17,10 @@ body {
 	background-size: cover;
 }
 
+
+.main-card {
+	background-color: rgb(23, 5, 66);
+}
 .zen-dots {
 	font-family: 'Zen Dots', cursive;
 }
@@ -41,7 +46,8 @@ h2 {
 
 h3 {
 	font-family: var(--title-font);
-	color: var(--dark-blue);
+	/* color: var(--dark-blue); */
+	color: var(--neon-kelp);
 }
 
 p {
@@ -166,8 +172,23 @@ label{
 	color: var(--dark-blue);
 }
 
+.font-maven {
+	font-family: 'Maven Pro', san-serif;
+	font-weight: 500;
+}
+
+.font-maven-600 {
+	font-family: 'Maven Pro', san-serif;
+	font-weight: 600;
+}
+
 .text-green {
 	color: var(--green);
+}
+
+.text-light {
+	color:rgb(255, 255, 255);
+
 }
 
 .text-white {
