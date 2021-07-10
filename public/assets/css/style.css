@@ -29,6 +29,22 @@ body {
 	font-family: 'ZCOOL XiaoWei', serif;
 }
 
+.font-maven {
+	font-family: 'Maven Pro', san-serif;
+	font-weight: 500;
+}
+
+.font-maven-600 {
+	font-family: 'Maven Pro', san-serif;
+	font-weight: 600;
+}
+.nav-bar {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	color:rgb(255, 255, 255);
+}
+
 .nav-style {
 	font-family: var(--title-font);
 	color: var(--green);
@@ -152,6 +168,10 @@ label{
 	background-color: var(--dark-blue);
 }
 
+.bg-dark-b {
+	background: rgb(27, 5, 71);
+}
+
 .bg-green {
 	background-color: var(--green);
 }
@@ -160,6 +180,24 @@ label{
 	background-color: var(--white);
 }
 
+.near {
+	font-weight: 600;
+	color:rgb(23, 5, 66);
+	background-color: var(--green);
+	width: fit-content;
+}
+.profile-card {
+	background: rgb(27, 5, 71);
+	color: var(--neon-kelp);
+	font-family: 'Maven Pro', san-serif;
+
+}
+
+.card {
+	background-color: transparent;
+	border: 0;
+	
+}
 .color-lavender {
 	color: var(--lavender);
 }
@@ -172,14 +210,10 @@ label{
 	color: var(--dark-blue);
 }
 
-.font-maven {
-	font-family: 'Maven Pro', san-serif;
-	font-weight: 500;
-}
 
-.font-maven-600 {
-	font-family: 'Maven Pro', san-serif;
-	font-weight: 600;
+
+.f-lg {
+	font-size: 2em;
 }
 
 .text-green {
