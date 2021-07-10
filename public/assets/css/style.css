@@ -193,9 +193,16 @@ label{
 
 }
 
+.carousel {
+	margin: auto;
+    width: 40%;
+}
+
 .card {
 	background-color: transparent;
-	border: 0;
+    border: 0;
+    margin: auto;
+    width: 40em;
 
 }
 .color-lavender {
