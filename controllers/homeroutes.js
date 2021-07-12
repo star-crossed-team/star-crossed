@@ -58,14 +58,23 @@ router.get("/login", (req, res) => {
 
 router.get("/signup", (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  
+
   // if (req.session.logged_in) {
   //   alert("You're logged in");
   //   res.redirect("/");
   //   return;
   // }
-    res.render("signup");
+  res.render("signup");
 
+});
+
+router.get("/map", async (req, res) => {
+  try {
+
+    res.render("map");
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

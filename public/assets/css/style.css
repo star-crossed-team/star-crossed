@@ -1,90 +1,96 @@
 :root {
-	--dark-blue: #00569e;
-	--neon-kelp:#93f0e0;
-	--lavender: #62439c;
-	--light-blue: #52e7fa;
-	--white: #f6fdfe;
-	--green: #7dccab;
+  --dark-blue: #00569e;
+  --neon-kelp: #93f0e0;
+  --lavender: #62439c;
+  --light-blue: #52e7fa;
+  --white: #f6fdfe;
+  --green: #7dccab;
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background: url(../images/space.jpg);
-	background-size: cover;
+  background: url(../images/space.jpg);
+  background-size: cover;
 }
 
+.map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
 
 .main-card {
-	background-color: rgb(23, 5, 66);
+  background-color: rgb(23, 5, 66);
 }
 .zen-dots {
-	font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
 }
 
 .zcool {
-	font-family: 'ZCOOL XiaoWei', serif;
+  font-family: "ZCOOL XiaoWei", serif;
 }
 
 .font-maven {
-	font-family: 'Maven Pro', san-serif;
-	font-weight: 500;
+  font-family: "Maven Pro", san-serif;
+  font-weight: 500;
 }
 
 .font-maven-600 {
-	font-family: 'Maven Pro', san-serif;
-	font-weight: 600;
+  font-family: "Maven Pro", san-serif;
+  font-weight: 600;
 }
 .nav-bar {
-	font-family: 'Maven Pro', sans-serif;
-	font-weight: 600;
-	font-size: 2em;
-	color:rgb(255, 255, 255);
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
 }
 
 .nav-style {
-	font-family: var(--title-font);
-	color: var(--green);
+  font-family: var(--title-font);
+  color: var(--green);
 }
 
 h1 {
-	font-family: var(--title-font);
-	color: var(--lavender);
+  font-family: var(--title-font);
+  color: var(--lavender);
 }
 
 h2 {
-	font-family: var(--title-font);
-	color: var(--white);
+  font-family: var(--title-font);
+  color: var(--white);
 }
 
 h3 {
-	font-family: var(--title-font);
-	/* color: var(--dark-blue); */
-	color: var(--neon-kelp);
+  font-family: var(--title-font);
+  /* color: var(--dark-blue); */
+  color: var(--neon-kelp);
 }
 
 p {
-	font-family: var(--body-font);
-	color: var(--light-blue);
+  font-family: var(--body-font);
+  color: var(--light-blue);
 }
 
 .logo-main {
-	display: flex;
-	margin: auto;
-	width: 250;
-	height: 250;
+  display: flex;
+  margin: auto;
+  width: 250;
+  height: 250;
 }
 
-label{
-    display: inline-block;
-     float: left;
-    clear: left;
-    width: 250px;
-    text-align:right;
-    padding-right: 1em;
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  padding-right: 1em;
 }
 /* input {
   display: inline-block;
@@ -92,195 +98,187 @@ label{
 } */
 
 .signup-label {
-	color: var(--white);
+  color: var(--white);
 }
 
 .card-center {
-	display: flex;
-	margin: auto;
-	padding: 0;
+  display: flex;
+  margin: auto;
+  padding: 0;
 }
 
-
 @-webkit-keyframes gradient-shadow {
-	0% {
-		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-	}
-	20% {
-		-webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
-		box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
-	}
-	40% {
-		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-	}
-	60% {
-		-webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
-		box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
-	}
-	80% {
-		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-	}
-	100% {
-		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-	}
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+    box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+    box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+    box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+    box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+    box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+    box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+  }
 }
 
 @keyframes gradient-shadow {
-	0% {
-		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-	}
-	20% {
-		-webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
-		box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
-	}
-	40% {
-		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-	}
-	60% {
-		-webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
-		box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
-	}
-	80% {
-		-webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-		box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
-	}
-	100% {
-		-webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-		box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
-	}
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+    box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+    box-shadow: 0 0 17px 3px #00569e, 0 0 4px 2px #00569e;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+    box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+    box-shadow: 0 0 17px 3px #b09bd8, 0 0 4px 2px #b09bd8;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+    box-shadow: 0 0 17px 3px #52e7fa, 0 0 4px 2px #52e7fa;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+    box-shadow: 0 0 17px 3px #7dccab, 0 0 4px 2px #7dccab;
+  }
 }
 
 .bg-lavender {
-	background-color: var(--lavender);
+  background-color: var(--lavender);
 }
 
 .bg-light-blue {
-	background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 .bg-dark-blue {
-	background-color: var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 
 .bg-dark-b {
-	background: rgb(27, 5, 71);
+  background: rgb(27, 5, 71);
 }
 
 .bg-green {
-	background-color: var(--green);
+  background-color: var(--green);
 }
 
 .bg-white {
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 .near {
-	font-weight: 600;
-	color:rgb(23, 5, 66);
-	background-color: var(--green);
-	width: fit-content;
+  font-weight: 600;
+  color: rgb(23, 5, 66);
+  background-color: var(--green);
+  width: fit-content;
 }
 .profile-card {
-	background: rgb(27, 5, 71);
-	color: var(--neon-kelp);
-	font-family: 'Maven Pro', san-serif;
-
+  background: rgb(27, 5, 71);
+  color: var(--neon-kelp);
+  font-family: "Maven Pro", san-serif;
 }
 
 .carousel {
-	margin: auto;
-    width: 40%;
+  margin: auto;
+  width: 40%;
 }
 
 .card {
-	background-color: transparent;
-    border: 0;
-    margin: auto;
-    width: 40em;
-
+  background-color: transparent;
+  border: 0;
+  margin: auto;
+  width: 40em;
 }
 .color-lavender {
-	color: var(--lavender);
+  color: var(--lavender);
 }
 
 .color-light-blue {
-	color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 .color-dark-blue {
-	color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
-
-
 .f-lg {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .text-green {
-	color: var(--green);
+  color: var(--green);
 }
 
 .text-light {
-	color:rgb(255, 255, 255);
-
+  color: rgb(255, 255, 255);
 }
 
 .text-white {
-	color: var(--white);
+  color: var(--white);
 }
 
-
 .form-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .d-f {
-    display: flex;
+  display: flex;
 }
 
 .jc-c {
-    justify-content: center;
+  justify-content: center;
 }
 
 .p-1em {
-    padding: 1em;
+  padding: 1em;
 }
 
 .mt-2em {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .mr-15em {
-	margin-right: 15em;
+  margin-right: 15em;
 }
 
-	 .title-font {
-	font-family: 'Zen Dots', cursive;
-	 }
+.title-font {
+  font-family: "Zen Dots", cursive;
+}
 .card-glow {
-
-	-webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
-	box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
-	-webkit-animation-name: gradient-shadow;
-	animation-name: gradient-shadow;
-	-webkit-animation-timing-function: ease;
-	animation-timing-function: ease;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+  -webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
+  box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
+  -webkit-animation-name: gradient-shadow;
+  animation-name: gradient-shadow;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
