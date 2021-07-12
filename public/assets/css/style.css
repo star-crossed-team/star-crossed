@@ -27,6 +27,11 @@ body {
 .main-card {
   background-color: rgb(23, 5, 66);
 }
+
+.mb-2 {
+  margin-bottom: 2%;
+}
+
 .zen-dots {
   font-family: "Zen Dots", cursive;
 }
@@ -86,7 +91,6 @@ p {
 
 label {
   display: inline-block;
-  float: left;
   clear: left;
   width: 250px;
   text-align: right;
