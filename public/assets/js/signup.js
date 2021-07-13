@@ -1,5 +1,3 @@
-
-
 const signupFormHandler = async (event) => {
   event.preventDefault();
   console.log('helllo');
@@ -22,7 +20,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.replace("/profile1");
     } else {
       alert(response.statusText);
     }

@@ -5,8 +5,8 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
 
-    if (email && password) {
-        console.log(email, password);
+  if (email && password) {
+    console.log(email, password);
 
     // Send a POST request to the API endpoint
     const response = await fetch("api/users/login", {
@@ -17,13 +17,12 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace("/profile");
+      document.location.replace("/profile1");
     } else {
       alert(response.statusText);
     }
   }
 };
-
 
 document
   .querySelector(".login-form")

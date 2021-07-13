@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const withAuth = require("../utils/auth");
 
-router.get("/profile", (req, res) => {
+router.get("/profile1", (req, res) => {
     try {
-        res.render("profile");
+        res.render("profile1");
     } catch (err) {
         res.status(500).json(err);
     }
@@ -32,5 +32,5 @@ router.get("/profile4", (req, res) => {
         res.status(500).json(err);
     }
 });
-module.exports = router;
 
+module.exports = router;
