@@ -1,0 +1,32 @@
+{{! Nav Bar Logo - Left }}
+<nav class="navbar navbar-expand-md">
+  <div class="nav-bar">
+    <img src="/assets/images/logo_light.png" style="max-width: 3em;" />
+  </div>
+  {{! Nav Bar Buttons - Right }}
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item zcool">
+        <button
+          class="btn btn-primary zen-dots bg-lavender"
+          id="logout"
+        >Logout</button>
+      </li>
+      <li class="nav-item zcool">
+        <button
+          onclick="document.location='/map'"
+          class="btn btn-primary zen-dots bg-lavender"
+          id="map"
+        >Map</button>
+      </li>
+    </ul>
+  </div>
+</nav>
