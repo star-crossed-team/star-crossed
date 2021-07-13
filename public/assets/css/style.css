@@ -17,13 +17,6 @@ body {
   background-size: cover;
 }
 
-.map {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
 .main-card {
   background-color: rgb(23, 5, 66);
 }
@@ -50,15 +43,15 @@ body {
   font-weight: 600;
 }
 .nav-bar {
-  font-family: "Maven Pro", sans-serif;
-  font-weight: 600;
+  display: flex;
   font-size: 2em;
-  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.nav-style {
-  font-family: var(--title-font);
-  color: var(--green);
+.nav-bar-r {
+  display: flex;
+  justify-content: flex-end;
 }
 
 h1 {
@@ -73,7 +66,6 @@ h2 {
 
 h3 {
   font-family: var(--title-font);
-  /* color: var(--dark-blue); */
   color: var(--neon-kelp);
 }
 
@@ -96,10 +88,6 @@ label {
   text-align: right;
   padding-right: 1em;
 }
-/* input {
-  display: inline-block;
-  float: left;
-} */
 
 .signup-label {
   color: var(--white);
@@ -269,6 +257,7 @@ label {
 .title-font {
   font-family: "Zen Dots", cursive;
 }
+
 .card-glow {
   -webkit-box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
   box-shadow: #f6fdfe, 8px 8px 4px 2px #f6fdfe;
