@@ -17,8 +17,41 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-family: var(--title-font);
+  color: var(--lavender);
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--white);
+}
+
+h3 {
+  font-family: var(--title-font);
+  color: var(--neon-kelp);
+}
+
+p {
+  font-family: var(--body-font);
+  color: var(--light-blue);
+}
+
+label {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  padding-right: 1em;
+}
+
 .main-card {
   background-color: rgb(23, 5, 66);
+}
+
+.swipe {
+  justify-content: center;
+  display: flex;
 }
 
 .mb-2 {
@@ -54,39 +87,12 @@ body {
   justify-content: flex-end;
 }
 
-h1 {
-  font-family: var(--title-font);
-  color: var(--lavender);
-}
-
-h2 {
-  font-family: var(--title-font);
-  color: var(--white);
-}
-
-h3 {
-  font-family: var(--title-font);
-  color: var(--neon-kelp);
-}
-
-p {
-  font-family: var(--body-font);
-  color: var(--light-blue);
-}
 
 .logo-main {
   display: flex;
   margin: auto;
   width: 250;
   height: 250;
-}
-
-label {
-  display: inline-block;
-  clear: left;
-  width: 250px;
-  text-align: right;
-  padding-right: 1em;
 }
 
 .signup-label {
@@ -97,6 +103,10 @@ label {
   display: flex;
   margin: auto;
   padding: 0;
+}
+
+.logout-text {
+  padding-top: .35em;
 }
 
 @-webkit-keyframes gradient-shadow {
@@ -189,11 +199,6 @@ label {
   font-family: "Maven Pro", san-serif;
 }
 
-.carousel {
-  margin: auto;
-  width: 40%;
-}
-
 .card {
   background-color: transparent;
   border: 0;
@@ -274,4 +279,13 @@ label {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 576px){
+  .nav-bar {
+      display: flex;
+      flex-wrap: inherit;
+      flex-direction: column;
+      align-items: center;
+  }
 }
