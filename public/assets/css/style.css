@@ -24,9 +24,37 @@ body {
 }
 
 .call-outs {
-  position: absolute;
+  /* position: absolute;
   background-color: var(--lavender);
-  padding: 15px;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.25rem;
+  color: var(--green);
+  padding: 15px; */
+  width: 100px;
+  height: 40px;
+  background-color: var(--lavender);
+  border-radius: 5px;
+  position: fixed;
+  padding: 10px;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--green);
+  text-align: center;
+}
+
+.call-outs:after {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid var(--lavender);
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -10px;
 }
 
 h1 {
@@ -84,12 +112,12 @@ label {
 }
 
 .font-maven {
-  font-family: "Maven Pro", san-serif;
+  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
 
 .font-maven-600 {
-  font-family: "Maven Pro", san-serif;
+  font-family: "Maven Pro", sans-serif;
   font-weight: 600;
 }
 .nav-bar {
@@ -222,7 +250,7 @@ label {
 .profile-card {
   background: rgb(27, 5, 71);
   color: var(--neon-kelp);
-  font-family: "Maven Pro", san-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .card {
