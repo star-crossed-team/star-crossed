@@ -27,10 +27,12 @@
 
 <div>
 {{#each users }}
-<a href='/profile{{id}}' class="call-outs" style='left: {{format_left id}}px; top: {{format_id id}}px'>
+<a href='/profile{{id}}' class="call-outs card-glow" style='left: {{format_left id}}px; top: {{format_id id}}px'>
   {{user_name}}
 </a>
 {{/each}}
+</div>
+<div>
   <map name="spacemap">
     <area
       alt="Andy"
