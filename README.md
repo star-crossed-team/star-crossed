@@ -9,7 +9,7 @@ Our motivation for creating this project was to create a fun dating app that all
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Future Development](#future)
+- [Future Development](#future development)
 - [Questions](#questions)
 
 ## Installation
