@@ -9,7 +9,7 @@ Our motivation for creating this project was to create a fun dating app that all
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Future Development](#future development)
+- [Future Development](#futuredevelopment)
 - [Questions](#questions)
 
 ## Installation
@@ -26,7 +26,7 @@ To use our app, you can click the sign up button, and fill out form. Once you su
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Future Development
+## FutureDevelopment
 
 We will continue to add new features and make the app more dynamic. We'd like to create one profile view and use handlebars variables to dynamically swap the informaiton from our database so users can view all the available profiles in the database.
 
