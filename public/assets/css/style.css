@@ -17,6 +17,18 @@ body {
   background-size: cover;
 }
 
+.big-map {
+  max-width: 100%;
+  margin: auto;
+  max-height: 100vh;
+}
+
+.call-outs {
+  position: absolute;
+  background-color: var(--lavender);
+  padding: 15px;
+}
+
 h1 {
   font-family: var(--title-font);
   color: var(--lavender);
@@ -35,7 +47,7 @@ h3 {
 p {
   font-family: var(--body-font);
   color: var(--light-blue);
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   line-height: 1.75;
 }
 
@@ -92,7 +104,6 @@ label {
   justify-content: flex-end;
 }
 
-
 .logo-main {
   display: flex;
   margin: auto;
@@ -112,7 +123,7 @@ label {
 
 .card-img-top {
   padding-bottom: 1em;
-  border-radius: 2em
+  border-radius: 2em;
 }
 
 .card-title {
@@ -121,7 +132,7 @@ label {
 }
 
 .logout-text {
-  padding-top: .35em;
+  padding-top: 0.35em;
 }
 
 @-webkit-keyframes gradient-shadow {
@@ -302,11 +313,11 @@ label {
   -o-border-radius: 5px;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .nav-bar {
-      display: flex;
-      flex-wrap: inherit;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    flex-direction: column;
+    align-items: center;
   }
 }
