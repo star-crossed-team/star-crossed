@@ -26,8 +26,20 @@
 
 <div class="swipe">
   <a href="/profile2" class="btn btn-primary zen-dots bg-lavender">Previous</a>
-  <img src="/assets/images/x_before1.png">
-  <img src="/assets/images/heart_before1.png">
+
+  <script>
+  var onImg_x= "/assets/images/x_before1.png";
+  var offImg_x= "/assets/images/x_after.png";
+  </script>
+<img src="/assets/images/x_before1.png" onclick="this.src = (this.src.endsWith(offImg_x)? onImg_x : offImg_x);"/>
+  <script>
+
+  var onImg_heart= "/assets/images/heart_before1.png";
+  var offImg_heart= "/assets/images/heart_after1.png";
+  </script>
+
+<img src="/assets/images/heart_before1.png" onclick="this.src = (this.src.endsWith(offImg_heart)? onImg_heart : offImg_heart);"/>
+
 	<a href="/profile4" class="btn btn-primary zen-dots bg-lavender">Next</a>
 </div>
 
