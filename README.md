@@ -20,7 +20,7 @@ Here is the link to the Github repository where the repo can be cloned (https://
 
 To use our app, you can click the sign up button, and fill out form. Once you submit that, your information will be added to the database, and you will be routed to the profile carousel. You can scroll through profiles, like or dislkike them, and there's also an interactive map which can be viewed by clicking the map link.
 
-![screenshot](assets/images/screenshot.png)
+![screenshot](public/assets/images/screenshot.PNG)
 
 ## License
 
