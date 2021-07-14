@@ -7,7 +7,7 @@ const seedAll = async () => {
   await seedUsers();
   console.log("\n----- USERS SEEDED -----\n");
 
-  process.exit(0);
+  // process.exit(0);
 };
 
 seedAll();

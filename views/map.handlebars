@@ -26,7 +26,11 @@
 </div>
 
 <div>
-
+{{#each users }}
+<a href='/profile{{id}}' class="call-outs" style='left: {{format_left id}}px; top: {{format_id id}}px'>
+  {{user_name}}
+</a>
+{{/each}}
   <map name="spacemap">
     <area
       alt="Andy"
@@ -61,7 +65,7 @@
       shape="rect"
     />
   </map>
-  <img src="/assets/images/map.jpg" alt="Space Map" usemap="#spacemap" />
+  {{!-- <img src="/assets/images/map.jpg" alt="Space Map" usemap="#spacemap" class="big-map" /> --}}
 
 </div>
 

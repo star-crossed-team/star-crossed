@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const withAuth = require("../utils/auth");
+const User = require('../models/User');
 
 router.get("/", (req, res) => {
   try {
@@ -29,9 +30,11 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-router.get("/map", (req, res) => {
+router.get("/map", async (req, res) => {
   try {
-    res.render("map");
+    const userData = await User.findAll();
+    const users = userData.map((user) => user.get({ plain: true }));
+    res.render("map", { users });
   } catch (err) {
     res.status(500).json(err);
   }
