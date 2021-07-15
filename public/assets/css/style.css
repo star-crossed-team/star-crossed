@@ -24,12 +24,6 @@ body {
 }
 
 .call-outs {
-  /* position: absolute;
-  background-color: var(--lavender);
-  font-family: "Maven Pro", sans-serif;
-  font-size: 1.25rem;
-  color: var(--green);
-  padding: 15px; */
   width: 100px;
   height: 40px;
   background-color: var(--lavender);
