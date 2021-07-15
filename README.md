@@ -1,4 +1,4 @@
-# star-crossed-dating-app
+# Star-Crossed Dating App
 
 ## Description
 
@@ -26,7 +26,7 @@ To use our app, you can click the sign up button, and fill out form. Once you su
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## FutureDevelopment
+## Future Development
 
 We will continue to add new features and make the app more dynamic. We'd like to create one profile view and use handlebars variables to dynamically swap the informaiton from our database so users can view all the available profiles in the database.
 

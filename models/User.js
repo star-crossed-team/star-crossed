@@ -1,4 +1,3 @@
-// import important parts of sequelize library
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("./../config/connection.js");
@@ -10,7 +9,7 @@ class User extends Model {
   }
 }
 
-// set up fields and rules for User model
+// Set up fields and rules for User model
 User.init(
   {
     // define columns
